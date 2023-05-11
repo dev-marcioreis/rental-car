@@ -36,7 +36,7 @@
   --container-md: 90%;
   --container-max-wd: 1800px;
 
-  --color-gradiente: linear-gradient(90deg, hsl(276, 91%, 41%) 0%, hsl(281, 88%, 84%) 100%)
+  --color-gradient: linear-gradient(90deg, hsl(276, 91%, 41%) 0%, hsl(281, 88%, 84%) 100%)
 
 }
 
@@ -46,7 +46,7 @@ html {
   scroll-padding-top: 6rem;
 }
 body {
-  background: var(--color-gradiente);
+  background: var(--color-gradient);
   color: var(--color-white);
   line-height: var(--line-height);
   font-size: var(--font-size);

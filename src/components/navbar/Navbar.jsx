@@ -1,8 +1,17 @@
 import { Link } from 'react-router-dom'
 import Logo from '../../assets/logo.png'
 import './style.css'
+import { useState } from 'react'
+import { AiOutlineMenu as Menu, AiOutlineClose as MenuClose } from 'react-icons/ai'
 
 const Navbar = () => {
+
+  const [navbar, setNavbar] = useState(false)
+
+  const openNavbar = () => {
+    setNavbar(!navbar)
+  }
+
   return (
     <nav>
       <div className='navbar'>
@@ -47,8 +56,46 @@ const Navbar = () => {
                 Cadastre-se
               </Link>
             </div>
+            <div className="mobile__toggle" onClick={openNavbar}>
+              <Menu />
+            </div>
           </div>
         </div>
+
+        {/* Mobile */}
+        <div className={`navbar__mobile ${navbar ? 'open__navbar' : ''}`}>
+          <div onClick={openNavbar} className='navbar__mobile-close'>
+            <MenuClose />
+          </div>
+          <ul className="navbar__mobile-links">
+              <li>
+                <Link onClick={openNavbar} to="/">
+                  início
+                </Link>
+              </li>
+              <li>
+                <Link onClick={openNavbar}  to="/about">
+                  sobre
+                </Link>
+              </li>
+              <li>
+                <Link onClick={openNavbar}  to="/models">
+                  modelos
+                </Link>
+              </li>
+              <li>
+                <Link onClick={openNavbar}  to="/team">
+                  equipe
+                </Link>
+              </li>
+              <li>
+                <Link onClick={openNavbar}  to="/contact">
+                  contato
+                </Link>
+              </li>
+            </ul>
+        </div>
+
     </nav>
   )
 }
