@@ -2,7 +2,7 @@
 
 ---
 
-Este projeto será uma página para simular aluguél de veículos.
+Este projeto será uma página para simular aluguel de veículos.
 
 ## 🚀 Em desenvolvimento...
 
