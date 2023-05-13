@@ -162,6 +162,7 @@ button:hover {
     }
     .content {
         padding: 0;
+        background: none;
     }
     .content h2 {
         display: none;
