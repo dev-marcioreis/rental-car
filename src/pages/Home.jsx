@@ -1,8 +1,10 @@
-import './style.css'
+import Hero from '../components/hero/Hero'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <>
+      <Hero />
+    </>
   )
 }
 

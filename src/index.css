@@ -23,6 +23,7 @@
   --color-dark: hsl(0, 0%, 0%);
   --color-transparent: hsla(0, 0%, 100%, 0);
   --color-semi-transp: hsla(0, 0%, 0%, 0.341);
+  --color-red: hsl(347, 100%, 71%);
 
   --font-size: .9rem;
   --line-height: 1.6;
@@ -41,10 +42,6 @@
 }
 
 /*==========Base==========*/
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 6rem;
-}
 body {
   background: var(--color-gradient);
   color: var(--color-white);
@@ -106,6 +103,7 @@ img {
   width: 100%;
 }
 
+/*==========Média Query==========*/
 @media (max-width: 1024px) {
   .container{
       width: var(--container-md);
@@ -122,6 +120,7 @@ img {
 
 }
 
+/*==========Média Query==========*/
 @media (max-width: 768px) {
   h1 {
       font-size: 2rem;
