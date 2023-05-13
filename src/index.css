@@ -17,6 +17,7 @@
 :root {
 
   --color-primary: hsl(276, 91%, 41%);
+  --color-bg: hsl(0, 0%, 13%);
   --color-primary-light: hsla(276, 91%, 41%, 0.849);
   --color-light: hsl(0, 17%, 95%);
   --color-white: hsl(0, 0%, 100%);
@@ -45,7 +46,7 @@
 
 /*==========Base==========*/
 body {
-  background: var(--color-primary);
+  background: var(--color-bg);
   color: var(--color-white);
   line-height: var(--line-height);
   font-size: var(--font-size);
@@ -57,7 +58,7 @@ body {
   background: var(--color-dark)
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--color-primary);
+  background: var(--color-red);
 }
 .container {
   width: var(--container-lg);
