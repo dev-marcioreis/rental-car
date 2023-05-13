@@ -2,12 +2,12 @@
 
 ---
 
-Este projeto será uma página para aluguél de veículos.
+Este projeto será uma página para simular aluguel de veículos.
 
 ## 🚀 Em desenvolvimento...
 
 ## 📋 Tecnologias
-React + Vite
+React + Vite + React hooks + React icons + React router ++++++
 
 ## ✒️ Autor
 Márcio Reis
@@ -15,6 +15,6 @@ Márcio Reis
 😊 Link de acesso: https://dev-marcioreis.github.io/rental-car/
 
 ---
-![image](https://github.com/dev-marcioreis/rental-car/assets/122680054/c0e93f48-80a3-4c73-a124-a4704e17636e)
+![image](https://github.com/dev-marcioreis/rental-car/assets/122680054/3d695955-ded7-444f-8e93-41ed7c302411)
 
 
