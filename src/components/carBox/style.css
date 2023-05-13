@@ -169,6 +169,10 @@ button:hover {
     .box__form {
         gap: .7rem;
     }
+    .box__form-car-time {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
     button {
         height: 70%;
         margin-block-start: 2rem;
