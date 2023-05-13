@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import HeroBg from '../../assets/hero.jpg'
 import HeroCar from '../../assets/heroCar.png'
 import { AiOutlineCheckCircle as Check, AiOutlineArrowRight as Arrow, AiOutlineArrowUp as ArrowTop } from 'react-icons/ai'
 import './style.css'
@@ -33,7 +32,6 @@ const Hero = () => {
   return (
     <>
       <section className='hero__section' id='home'>
-        <img src={HeroBg} className='hero__bg' alt="Hero image" />
         <div className="container">
           <div className="hero__content">
             <div className="hero__content-info">
