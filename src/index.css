@@ -47,7 +47,7 @@ body {
   color: var(--color-white);
   line-height: var(--line-height);
   font-size: var(--font-size);
-  height: 100vh;
+  height: 300rem;
 }
 ::-webkit-scrollbar {
   width: .5rem;

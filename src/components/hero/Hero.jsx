@@ -13,9 +13,9 @@ const Hero = () => {
     window.scrollTo( { top: (0, 0), behavior: "smooth" } )
   }
 
-  useEffect( () => {
+  useEffect(() => {
     const onPageScroll = () => {
-      if(window.pageYOffset > 600) {
+      if(window.pageYOffset > 500) {
         setUp(true)
       } else {
         setUp(false)
@@ -24,7 +24,10 @@ const Hero = () => {
 
     window.addEventListener('scroll', onPageScroll)
 
-    return window.removeEventListener('scroll', onPageScroll)
+    return () => {
+      window.removeEventListener("scroll", onPageScroll);
+    }
+
   }, [])
 
   return (
@@ -49,7 +52,7 @@ const Hero = () => {
             <img src={HeroCar} className='hero__bg-car' alt="Hero image" />
           </div>
         </div>
-        <div className={`scroll-up ${up ? "show__scroll" : ""}`} onClick={scrollToTop}>
+        <div className={`scroll__up ${up ? "show__scroll" : ""}`} onClick={scrollToTop}>
           <ArrowTop />
         </div>
       </section>
