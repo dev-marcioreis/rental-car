@@ -88,7 +88,7 @@
 }
 
 
-/*==========Média Query Tablet==========*/
+/*==========Media Query Tablet==========*/
 @media (max-width: 1024px) {
     .hero__content {
         margin-block-start: 8rem;
@@ -104,7 +104,7 @@
 }
 
 
-/*==========Média Query Mobile==========*/
+/*==========Media Query Mobile==========*/
 @media (max-width: 768px) {
     .hero__content {
         margin-block-start: 7rem;

@@ -1,0 +1,137 @@
+.carbox__section {
+    position: relative;
+    margin-block-end: 5rem;
+}
+.box__container {
+    background: var(--color-gradient);
+    border-radius: .5rem;
+    box-shadow: var(--shadow);
+}
+.box__content {
+    width: 100%;
+}
+.content {
+    position: relative;
+    height: auto;
+    padding: 2rem 2rem 4rem;
+    background: url('../../assets/carBox.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: contrast(1.5);
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+.content h2 {
+    text-align: center;
+    font-weight: 400;
+    margin-block-end: 2rem;
+    text-shadow: var(--shadow);
+}
+.box__form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, auto);
+    gap: 2rem;
+}
+.box__form-car-type {
+    display: flex;
+    flex-direction: column;
+}
+.box__form-car-type label {
+    font-weight: 400;
+    padding: .5rem 0;
+}
+label strong {
+    color: var(--color-dark);
+    margin-right: .5rem;
+    font-size: 1rem;
+}
+label i {
+    color: var(--color-white);
+    margin-right: .5rem;
+}
+.box__form-car-type select {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--color-text);
+    padding: .5rem;
+    border-radius: .5rem;
+    box-shadow: var(--shadow-1);
+}
+.box__form-car-type select option {
+    box-shadow: var(--shadow);
+    font-weight: 400;
+}
+.box__form-car-time {
+    display: flex;
+    flex-direction: column;
+}
+.box__form-car-time label {
+    padding: .5rem 0;
+}
+.box__form-car-time input {
+    border-radius: .5rem;
+    box-shadow: var(--shadow-1);
+    color: var(--color-text);
+    font-weight: 500;
+}
+::-webkit-datetime-edit {
+    padding: .5rem;
+}
+::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    font-size: 1.4rem;
+    margin-right: .5rem;
+    box-shadow: var(--shadow);
+}
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48%;
+    margin-block-start: 2.6rem;
+    border-radius: .5rem;
+    background: var(--color-red);
+    color: var(--color-white);
+    box-shadow: var(--shadow-1);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+button:hover {
+    letter-spacing: 7px;
+}
+.error__message {
+    background: var(--color-red);
+    color: var(--color-white);
+    font-weight: 500;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    box-shadow: var(--shadow);
+    margin-block-end: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: var(--transition);
+    display: none;
+    
+}
+.error__message i, .booking__done i {
+    cursor: pointer;
+}
+.booking__done {
+    background: var(--color-green);
+    color: var(--color-dark);
+    font-weight: 500;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    box-shadow: var(--shadow);
+    margin-block-end: 1rem;
+    display: flex;
+    align-items: center;
+    transition: var(--transition);
+    justify-content: space-between;
+    display: none;
+}
