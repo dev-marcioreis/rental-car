@@ -1,6 +1,7 @@
 .carbox__section {
     position: relative;
-    margin-block-end: 5rem;
+    margin-block-start: 7rem;
+    margin-block-end: 2rem;
 }
 .box__container {
     background: var(--color-gradient);
@@ -134,4 +135,44 @@ button:hover {
     transition: var(--transition);
     justify-content: space-between;
     display: none;
+}
+
+
+/*==========Media Query Tablet==========*/
+@media (max-width: 1024px) {
+    .carbox__section {
+        margin-block-start: 4rem;
+    }
+    .box__form {
+        grid-template-columns: 1fr;
+        grid-template-columns: auto;
+    }
+
+}
+
+
+/*==========Media Query Mobile==========*/
+@media (max-width: 768px) {
+    .box__container {
+        background: var(--color-transparent);
+        box-shadow: none;
+    }
+    .box__content {
+        width: 100%;
+    }
+    .content {
+        padding: 0;
+    }
+    .content h2 {
+        display: none;
+    }
+    .box__form {
+        gap: .7rem;
+    }
+    button {
+        height: 70%;
+        margin-block-start: 2rem;
+        font-size: 1.1rem;
+    }
+
 }
