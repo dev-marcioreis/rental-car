@@ -8,7 +8,7 @@ import Tiggo from '../assets/boxCars/tiggo.png'
 export const CAR_DATA = [
   [
     {
-      name: "Civic",
+      name: "Honda Civic",
       price: "200",
       img: Civic,
       model: "EXL",
@@ -22,7 +22,7 @@ export const CAR_DATA = [
   ],
   [
     {
-      name: "Corolla",
+      name: "Toyota Corolla",
       price: "220",
       img: Corolla,
       model: "XEi",
@@ -36,7 +36,7 @@ export const CAR_DATA = [
   ],
   [
     {
-      name: "HB20",
+      name: "Hyundai HB20 Sedan",
       price: "150",
       img: HB20,
       model: "Comfort",
@@ -50,7 +50,7 @@ export const CAR_DATA = [
   ],
   [
     {
-      name: "Pulse",
+      name: "Fiat Pulse",
       price: "190",
       img: Pulse,
       model: "Drive",
@@ -64,7 +64,7 @@ export const CAR_DATA = [
   ],
   [
     {
-      name: "T-Cross",
+      name: "Volkswagen T Cross",
       price: "205",
       img: TCross,
       model: "Highline",
@@ -78,7 +78,7 @@ export const CAR_DATA = [
   ],
   [
     {
-      name: "Tiggo 7",
+      name: "Chery Tiggo 7 Pro",
       price: "120",
       img: Tiggo,
       model: "Pro",

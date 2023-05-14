@@ -15,8 +15,10 @@ import './style.css'
 
 const CarBox = () => {
 
+  // Active Modal
   const [modal, setModal] = useState(false)
 
+  // Booking Car
   const [carType, setCarType] = useState("")
   const [pickUp, setPickUp] = useState("")
   const [dropOff, setDropOff] = useState("")
@@ -24,6 +26,7 @@ const CarBox = () => {
   const [dropTime, setDropTime] = useState("")
   const [carImg, setCarImg] = useState("")
 
+  // Modal Info
   const [name, setName] = useState("")
   const [lastName, setLastName] = useState("")
   const [phone, setPhone] = useState("")
@@ -33,22 +36,7 @@ const CarBox = () => {
   const [city, setCity] = useState("")
   const [zipcode, setZipCode] = useState("")
 
-  const openModal = e => {
-    e.preventDefault()
-
-    const errorMessege = document.querySelector('.error__message')
-
-    if(pickUp === "" || dropOff === "" || pickTime === "" || dropTime === "" || carType === "") {
-      errorMessege.style.display = 'flex'
-    } else {
-      const modalDiv = document.querySelector('.car__box-modal')
-
-      modalDiv.scroll(0, 0)
-      errorMessege.style.display = 'none'
-    }
-
-  }
-
+  // Valores das entradas modal
   const handleName = e => {
     setName(e.target.value)
   }
@@ -79,6 +67,24 @@ const CarBox = () => {
 
   const handleZip = e => {
     setZipCode(e.target.value)
+  }
+
+  // Modal aberto com todas as entradas preenchidas
+  const openModal = e => {
+    e.preventDefault()
+
+    const errorMessege = document.querySelector('.error__message')
+
+    if(pickUp === "" || dropOff === "" || pickTime === "" || dropTime === "" || carType === "") {
+      errorMessege.style.display = 'flex'
+    } else {
+      setModal(!modal);
+      const modalDiv = document.querySelector('.car__box-modal')
+
+      modalDiv.scroll(0, 0)
+      errorMessege.style.display = 'none'
+    }
+
   }
 
   useEffect(() => {
@@ -126,19 +132,19 @@ const CarBox = () => {
     case "Honda Civic":
       imageUrl = Civic;
       break;
-    case "Corolla":
+    case "Toyota Corolla":
       imageUrl = Corolla;
       break;
-    case "HB20":
+    case "Hyundai HB20 Sedan":
       imageUrl = HB20;
       break;
-    case "Pulse":
+    case "Fiat Pulse":
       imageUrl = Pulse;
       break;
-    case "TCross":
+    case "Volkswagen T Cross":
       imageUrl = TCross;
       break;
-    case "Tiggo":
+    case "Chery Tiggo 7 Pro":
       imageUrl = Tiggo;
       break;
     default:
@@ -146,8 +152,12 @@ const CarBox = () => {
   }
 
   const hideMessage = () => {
-    const doneMessege = document.querySelector('.error__message')
+
+    const doneMessege = document.querySelector('.booking__done')
+    const errorMessege = document.querySelector('.error__message')
+
     doneMessege.style.display = 'none'
+    errorMessege.style.display = 'none'
   }
 
   return (
@@ -183,7 +193,7 @@ const CarBox = () => {
                       <option value="Hyundai HB20 Sedan">Hyundai HB20 Sedan</option>
                       <option value="Fiat Pulse">Fiat Pulse</option>
                       <option value="Toyota Corolla">Toyota Corolla</option>
-                      <option value="Chery Tiggo 7 Pro">Chery Tiggo 7 Pr</option>
+                      <option value="Chery Tiggo 7 Pro">Chery Tiggo 7 Pro</option>
                       <option value="Honda Civic">Honda Civic</option>
                     </select>
                   </div>
@@ -236,7 +246,7 @@ const CarBox = () => {
       </section>
 
       {/*==========Modal==========*/}
-      <aside className="car__box-modal">
+      <aside className={`car__box-modal ${modal ? "active-modal" : ""}`}>
         <div className="car__box-modal-title">
           <h2>Resumo da reserva</h2>
           <i onClick={openModal}><Close /></i>
@@ -266,7 +276,6 @@ const CarBox = () => {
               </span>
             </div>
             <div className="car__box-modal-dates__info">
-              <h5>Local e Horário</h5>
               <span>
                 <i><Calendar /></i>
                 <div>
@@ -279,32 +288,31 @@ const CarBox = () => {
               </span>
             </div>
             <div className="car__box-modal-dates__info">
-              <h5>Local de retirada</h5>
               <span>
                 <i><Location /></i>
                 <div>
-                  <h6>Data e hora de entrega</h6>
+                  <h6>Local de Retirada</h6>
                   <p>{pickUp}</p>
                 </div>
               </span>
             </div>
             <div className="car__box-modal-dates__info">
-              <h5>Local de devolução</h5>
               <span>
                 <i><Location /></i>
                 <div>
-                  <h6>Data e hora de entrega</h6>
+                  <h6>Local de entrega</h6>
                   <p>{dropOff}</p>
                 </div>
               </span>
             </div>
           </div>
           <div className="car__box-modal-car-info">
-            <h5>
-              <span>Carro: </span>
-              {carType}
+            <h5 className='type__car-box'>
+              <span>{carType}</span>
             </h5>
-            {imageUrl && <img src={imageUrl} alt='Car image' />}
+            <div className='box__car-image'>
+              {imageUrl && <img src={imageUrl} alt='Car image' />}
+            </div>
           </div>
         </div>
         <div className="car__box-modal-personal-info">
