@@ -138,10 +138,6 @@ button:hover {
 }
 
 /*==========Modal Overlay==========*/
-.active-modal {
-    opacity: 1 !important;
-    display: flex !important;
-}
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -151,7 +147,11 @@ button:hover {
     background: var(--color-overlay);
     opacity: 0;
     display: none;
-    z-index: 2;
+    z-index: 999;
+}
+.active-modal {
+    opacity: 1 !important;
+    display: flex !important;
 }
 
 /*==========Modal==========*/
@@ -160,8 +160,9 @@ button:hover {
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
-    height: 80%;
+    width: 75%;
+    max-width: var(--container-max-wd);
+    height: 75%;
     background: var(--color-white);
     box-shadow: var(--shadow-1);
     border: 2px solid var(--color-white);
@@ -173,7 +174,7 @@ button:hover {
     opacity: 0;
     display: none;
     transition: var(--transition);
-    z-index: 3;
+    z-index: 999;
 
 }
 .car__box-modal-title {
@@ -229,10 +230,7 @@ button:hover {
 .car__box-modal-car-info {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    background: var(--color-white);
     color: var(--color-dark);
-    border-top-left-radius: .5rem;
-    border-top-right-radius: .5rem;
     padding: 2rem;
 }
 .modal__dates {
@@ -378,6 +376,17 @@ span input {
         grid-template-columns: 1fr;
         grid-template-columns: auto;
     }
+    .car__box-modal {
+        width: 85%;
+        height: 85%;
+    }
+    .car__box-modal-car-info {
+        flex-direction: column-reverse;
+    }
+    .box__car-image {
+        width: 100%;
+        margin-block-start: -5rem;
+    }
 
 }
 
@@ -406,5 +415,46 @@ span input {
         margin-block-start: 2rem;
         font-size: 1.1rem;
     }
-
+    .car__box-modal-title {
+        padding: 0;;
+    }
+    .car__box-modal-title h2 {
+        font-size: 1.1rem;
+        text-transform: capitalize;
+    }
+    .car__box-modal-title i {
+        background: var(--color-transparent);
+        color: var(--color-dark);
+        font-size: 1.1rem;
+        box-shadow: none;
+    }
+    .car__box-modal-messege {
+        gap: 1rem;
+        text-align: center;
+    }
+    .car__box-modal-dates__info h5 {
+        font-size: 1.2rem;
+        margin-block-end: 2rem;
+        text-align: center;
+    }
+    .car__box-modal-dates__info span i {
+        display: none;
+    }
+    .car__box-modal-dates__info span p input {
+        width: 60%;
+    }
+    .car__box-modal-personal-info {
+        padding: 0;
+    }
+    .car__box-modal-personal-info h4 {
+        font-size: 1.1rem;
+        text-transform: capitalize;
+    }
+    .form__info-2col, .form__info-1col {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: .5rem 0;
+    }
+    
+    
 }

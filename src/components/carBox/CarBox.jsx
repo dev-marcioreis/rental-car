@@ -247,131 +247,133 @@ const CarBox = () => {
 
       {/*==========Modal==========*/}
       <aside className={`car__box-modal ${modal ? "active-modal" : ""}`}>
-        <div className="car__box-modal-title">
-          <h2>Resumo da reserva</h2>
-          <i onClick={openModal}><Close /></i>
-        </div>
-        <div className="car__box-modal-messege">
-          <h4>
-            <i><Info /></i>
-            <strong>Ao concluir esta consulta de reserva, você receberá:</strong>
-          </h4>
-          <p>
-            Seu voucher para apresentar na chegada ao balcão <small>(152458)</small>, e o número de suporte ao cliente <small>(0800-800-800)</small>.
-          </p>
-        </div>
-        <div className="car__box-modal-car-info">
-          <div className="modal__dates">
-            <div className="car__box-modal-dates__info">
-              <h5>Local e Horário</h5>
-              <span>
-                <i><Calendar /></i>
-                <div>
-                  <h6>Data e Hora de retirada</h6>
-                  <p>
-                    {pickTime}
-                    <input type="time" className='input__time' />
-                  </p>
-                </div>
-              </span>
-            </div>
-            <div className="car__box-modal-dates__info">
-              <span>
-                <i><Calendar /></i>
-                <div>
-                  <h6>Data e hora de entrega</h6>
-                  <p>
-                    {dropTime}
-                    <input type="time" className='input__time' />
-                  </p>
-                </div>
-              </span>
-            </div>
-            <div className="car__box-modal-dates__info">
-              <span>
-                <i><Location /></i>
-                <div>
-                  <h6>Local de Retirada</h6>
-                  <p>{pickUp}</p>
-                </div>
-              </span>
-            </div>
-            <div className="car__box-modal-dates__info">
-              <span>
-                <i><Location /></i>
-                <div>
-                  <h6>Local de entrega</h6>
-                  <p>{dropOff}</p>
-                </div>
-              </span>
-            </div>
+        <div className='container'>
+          <div className="car__box-modal-title">
+            <h2>Resumo da reserva</h2>
+            <i onClick={openModal}><Close /></i>
+          </div>
+          <div className="car__box-modal-messege">
+            <h4>
+              <i><Info /></i>
+              <strong>Ao concluir esta consulta de reserva, você receberá:</strong>
+            </h4>
+            <p>
+              Seu voucher para apresentar na chegada ao balcão <small>(152458)</small>, e o número de suporte ao cliente <small>(0800-800-800)</small>.
+            </p>
           </div>
           <div className="car__box-modal-car-info">
-            <h5 className='type__car-box'>
-              <span>{carType}</span>
-            </h5>
-            <div className='box__car-image'>
-              {imageUrl && <img src={imageUrl} alt='Car image' />}
+            <div className="modal__dates">
+              <div className="car__box-modal-dates__info">
+                <h5>Local e Horário</h5>
+                <span>
+                  <i><Calendar /></i>
+                  <div>
+                    <h6>Data e Hora de retirada</h6>
+                    <p>
+                      {pickTime}
+                      <input type="time" className='input__time' />
+                    </p>
+                  </div>
+                </span>
+              </div>
+              <div className="car__box-modal-dates__info">
+                <span>
+                  <i><Calendar /></i>
+                  <div>
+                    <h6>Data e hora de entrega</h6>
+                    <p>
+                      {dropTime}
+                      <input type="time" className='input__time' />
+                    </p>
+                  </div>
+                </span>
+              </div>
+              <div className="car__box-modal-dates__info">
+                <span>
+                  <i><Location /></i>
+                  <div>
+                    <h6>Local de Retirada</h6>
+                    <p>{pickUp}</p>
+                  </div>
+                </span>
+              </div>
+              <div className="car__box-modal-dates__info">
+                <span>
+                  <i><Location /></i>
+                  <div>
+                    <h6>Local de entrega</h6>
+                    <p>{dropOff}</p>
+                  </div>
+                </span>
+              </div>
+            </div>
+            <div className="car__box-modal-car-info">
+              <h5 className='type__car-box'>
+                <span>{carType}</span>
+              </h5>
+              <div className='box__car-image'>
+                {imageUrl && <img src={imageUrl} alt='Car image' />}
+              </div>
             </div>
           </div>
-        </div>
-        <div className="car__box-modal-personal-info">
-          <h4>Preencha seus dados</h4>
-          <form className="modal__form">
-            <div className="form__info-2col">
-              <span>
-                <label>Nome <small>*</small></label>
-                <input value={name} onChange={handleName} type="text" placeholder='Digite seu nome' />
-                <p className='modal__error-messege'>Este campo é obrigatório!</p>
+          <div className="car__box-modal-personal-info">
+            <h4>Preencha seus dados</h4>
+            <form className="modal__form">
+              <div className="form__info-2col">
+                <span>
+                  <label>Nome <small>*</small></label>
+                  <input value={name} onChange={handleName} type="text" placeholder='Digite seu nome' />
+                  <p className='modal__error-messege'>Este campo é obrigatório!</p>
+                </span>
+                <span>
+                  <label>Sobrenome <small>*</small></label>
+                  <input value={lastName} onChange={handleLastName} type="text" placeholder='Digite seu sobrenome' />
+                  <p className='modal__error-messege'>Este campo é obrigatório!</p>
+                </span>
+                <span>
+                  <label>Telefone <small>*</small></label>
+                  <input value={phone} onChange={handlePhone} type="tel" placeholder='Digite seu telefone' />
+                  <p className='modal__error-messege'>Este campo é obrigatório!</p>
+                </span>
+                <span>
+                  <label>Idade <small>*</small></label>
+                  <input value={age} onChange={handleAge} type="number" placeholder='Maior que 18 anos' />
+                  <p className='modal__error-messege'>Este campo é obrigatório!</p>
+                </span>
+              </div>
+              <div className="form__info-1col">
+                <span>
+                  <label>E-mail <small>*</small></label>
+                  <input value={email} onChange={handleEmail} type="email" placeholder='Digite seu e-mail' />
+                  <p className='modal__error-messege'>Este campo é obrigatório!</p>
+                </span>
+                <span>
+                  <label>Endereço <small>*</small></label>
+                  <input value={address} onChange={handleAddress} type="text" placeholder='Digite nome da rua' />
+                  <p className='modal__error-messege'>Este campo é obrigatório!</p>
+                </span>
+              </div>
+              <div className="form__info-2col">
+                <span>
+                  <label>Cidade <small>*</small></label>
+                  <input value={city} onChange={handleCity} type="text" placeholder='Digite nome da cidade' />
+                  <p className='modal__error-messege'>Este campo é obrigatório!</p>
+                </span>
+                <span>
+                  <label>CEP <small>*</small></label>
+                  <input value={zipcode} onChange={handleZip} type="text" placeholder='Digite o CEP' />
+                  <p className='modal__error-messege'>Este campo é obrigatório!</p>
+                </span>
+              </div>
+              <span className='modal__form-check'>
+                <input type="checkbox" />
+                <p>Envie-me notícias e atualizações.</p>
               </span>
-              <span>
-                <label>Sobrenome <small>*</small></label>
-                <input value={lastName} onChange={handleLastName} type="text" placeholder='Digite seu sobrenome' />
-                <p className='modal__error-messege'>Este campo é obrigatório!</p>
-              </span>
-              <span>
-                <label>Telefone <small>*</small></label>
-                <input value={phone} onChange={handlePhone} type="tel" placeholder='Digite seu telefone' />
-                <p className='modal__error-messege'>Este campo é obrigatório!</p>
-              </span>
-              <span>
-                <label>Idade <small>*</small></label>
-                <input value={age} onChange={handleAge} type="number" placeholder='Maior que 18 anos' />
-                <p className='modal__error-messege'>Este campo é obrigatório!</p>
-              </span>
-            </div>
-            <div className="form__info-1col">
-              <span>
-                <label>E-mail <small>*</small></label>
-                <input value={email} onChange={handleEmail} type="email" placeholder='Digite seu e-mail' />
-                <p className='modal__error-messege'>Este campo é obrigatório!</p>
-              </span>
-              <span>
-                <label>Endereço <small>*</small></label>
-                <input value={address} onChange={handleAddress} type="text" placeholder='Digite nome da rua' />
-                <p className='modal__error-messege'>Este campo é obrigatório!</p>
-              </span>
-            </div>
-            <div className="form__info-2col">
-              <span>
-                <label>Cidade <small>*</small></label>
-                <input value={city} onChange={handleCity} type="text" placeholder='Digite nome da cidade' />
-                <p className='modal__error-messege'>Este campo é obrigatório!</p>
-              </span>
-              <span>
-                <label>CEP <small>*</small></label>
-                <input value={zipcode} onChange={handleZip} type="text" placeholder='Digite o CEP' />
-                <p className='modal__error-messege'>Este campo é obrigatório!</p>
-              </span>
-            </div>
-            <span className='modal__form-check'>
-              <input type="checkbox" />
-              <p>Envie-me notícias e atualizações.</p>
-            </span>
-            <div className="reserved__btn">
-              <button onClick={confirmBooking} className='reservedBtn'>Alugar agora</button>
-            </div>
-          </form>
+              <div className="reserved__btn">
+                <button onClick={confirmBooking} className='reservedBtn'>Alugar agora</button>
+              </div>
+            </form>
+          </div>
         </div>
       </aside>
 
