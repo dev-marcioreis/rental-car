@@ -27,6 +27,7 @@
   --color-red: hsl(347, 100%, 71%);
   --color-text: hsl(0, 0%, 53%);
   --color-green: hsl(154, 100%, 81%);
+  --color-overlay: hsla(0, 0%, 100%, 0.055);
 
   --font-size: .9rem;
   --line-height: 1.6;
