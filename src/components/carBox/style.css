@@ -137,7 +137,11 @@ button:hover {
 }
 
 /*==========Modal Overlay==========*/
-.modal__overlay {
+.active-modal {
+    opacity: 1 !important;
+    display: flex !important;
+}
+.modal-overlay {
     position: fixed;
     top: 0;
     right: 0;
@@ -149,30 +153,216 @@ button:hover {
     display: none;
     z-index: 1000;
 }
-.activeModal {
-    visibility: visible;
-    opacity: 1;
-    display: none;
-}
 
 /*==========Modal==========*/
 .car__box-modal {
     position: fixed;
-    top: 53%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
     height: 80%;
     background: var(--color-bg);
     box-shadow: var(--shadow-1);
+    border: 2px solid var(--color-white);
     border-radius: .5rem;
     display: flex;
     flex-direction: column;
     padding: 1rem 2rem;
     overflow-x: hidden;
     overflow-y: scroll;
+    opacity: 0;
+    display: none;
+    transition: var(--transition);
     z-index: 1000;
+
 }
+.car__box-modal-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--color-white);
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    box-shadow: var(--shadow-1);
+    padding: 0 2rem;
+    margin-block-end: 1rem;
+}
+.car__box-modal-title h2 {
+    color: var(--color-dark);
+    font-weight: 200;
+    text-transform: uppercase;
+}
+.car__box-modal-title i {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: var(--color-red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    box-shadow: var(--shadow-1);
+    cursor: pointer;
+    transition: var(--transition);
+}
+.car__box-modal-title i:hover {
+    background: var(--color-dark);
+}
+.car__box-modal-messege {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: .5rem;
+    margin-block-end: 3rem;
+    padding: 1rem 0;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    box-shadow: var(--shadow-1);
+    background: var(--color-white);
+    color: var(--color-dark);
+}
+.car__box-modal-messege h4 {
+    color: var(--color-dark);
+}
+.car__box-modal-messege h4 i {
+   margin-right: .3rem;
+}
+.car__box-modal-messege h4 strong {
+    font-weight: 400;
+}
+.car__box-modal-messege p {
+    color: var(--color-text);
+}
+.car__box-modal-car-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: var(--color-white);
+    color: var(--color-dark);
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    padding: 2rem;
+}
+.modal__dates {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.car__box-modal-dates__info h5 {
+    color: var(--color-dark);
+    margin-block-end: .5rem;
+}
+.car__box-modal-dates__info span {
+    display: flex;
+    gap: 1rem;
+}
+.car__box-modal-dates__info span i {
+    color: var(--color-red);
+    font-size: 1.5rem;
+}
+.car__box-modal-dates__info span h6 {
+    color: var(--color-dark);
+    margin-block-end: .2rem;
+}
+.car__box-modal-dates__info span p {
+    color: var(--color-text);
+    margin-block-end: .2rem;
+}
+.car__box-modal-car-info {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.car__box-modal-car-info h5 span {
+    color: var(--color-dark);
+}
+.car__box-modal-car-info img {
+    width: 100%;
+    height: auto;
+}
+.car__box-modal-personal-info {
+    display: flex;
+    flex-direction: column;
+    background: var(--color-white);
+    color: var(--color-dark);
+    margin-block-start: 1rem;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    padding: 2rem;
+}
+.car__box-modal-personal-info h4 {
+    background: var(--color-red);
+    border-radius: .5rem;
+    padding: .5rem;
+    font-size: 2rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-block-end: 2rem;
+    box-shadow: var(--shadow-1);
+}
+.form__info-2col, .form__info-1col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: .7rem 0;
+}
+.form__info-1col {
+    grid-template-columns: 1fr !important;
+}
+span {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+span label {
+    padding: 0 .5rem;
+}
+span label small {
+    font-size: 1rem;
+    color: var(--color-red);
+}
+span input {
+    box-shadow: var(--shadow-1);
+    color: var(--color-dark);
+    font-weight: 600;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+.modal__error-messege {
+    color: var(--color-red);
+}
+.modal__form-check {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: .5rem;
+    color: var(--color-text);
+    margin-block-start: 2rem;
+    margin-block-end: 3rem;
+}
+.modal__form-check input {
+    box-shadow: none;
+}
+.input__time {
+    text-align: center;
+    width: 10rem;
+    cursor: pointer;
+}
+.reserved__btn {
+    padding: 1rem 0;
+}
+.reserved__btn button {
+    padding: .5rem 1rem;
+}
+.reserved__btn button:hover {
+    letter-spacing: 0;
+    background: var(--color-primary);
+}
+.modal__dates {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+  }
 
 
 /*==========Media Query Tablet==========*/

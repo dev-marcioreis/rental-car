@@ -38,14 +38,14 @@ const CarBox = () => {
 
     const errorMessege = document.querySelector('.error__message')
 
-   if(pickUp === "" || dropOff === "" || pickTime === "" || dropTime === "" || carType === "") {
-    errorMessege.style.display = 'flex'
-   } else {
-    const modalDiv = document.querySelector('.car__box-modal')
+    if(pickUp === "" || dropOff === "" || pickTime === "" || dropTime === "" || carType === "") {
+      errorMessege.style.display = 'flex'
+    } else {
+      const modalDiv = document.querySelector('.car__box-modal')
 
-    modalDiv.scroll(0, 0)
-    errorMessege.style.display = 'none'
-   }
+      modalDiv.scroll(0, 0)
+      errorMessege.style.display = 'none'
+    }
 
   }
 
@@ -123,7 +123,7 @@ const CarBox = () => {
 
   let imageUrl
   switch (carImg) {
-    case "Civic":
+    case "Honda Civic":
       imageUrl = Civic;
       break;
     case "Corolla":
@@ -146,7 +146,7 @@ const CarBox = () => {
   }
 
   const hideMessage = () => {
-    const doneMessege = document.querySelector('.booking__done')
+    const doneMessege = document.querySelector('.error__message')
     doneMessege.style.display = 'none'
   }
 
@@ -155,7 +155,7 @@ const CarBox = () => {
       <section className="carbox__section" id='booking-section'>
 
         {/*==========Modal Overlay==========*/}
-        <div onClick={openModal } className={`modal__overlay ${modal ? "activeModal" : ""}`}></div>
+        <div onClick={openModal} className={`modal-overlay ${modal ? "active-modal" : ""}`}></div>
         {/*==========Modal Overlay==========*/}
 
         <div className="container">
@@ -247,7 +247,7 @@ const CarBox = () => {
             <strong>Ao concluir esta consulta de reserva, você receberá:</strong>
           </h4>
           <p>
-            Seu voucher para apresentar na chegada ao balcão <small>(152458)</small>, e um número de suporte ao cliente <small>(0800-800-800)</small>.
+            Seu voucher para apresentar na chegada ao balcão <small>(152458)</small>, e o número de suporte ao cliente <small>(0800-800-800)</small>.
           </p>
         </div>
         <div className="car__box-modal-car-info">
@@ -259,7 +259,7 @@ const CarBox = () => {
                 <div>
                   <h6>Data e Hora de retirada</h6>
                   <p>
-                    {}
+                    {pickTime}
                     <input type="time" className='input__time' />
                   </p>
                 </div>
@@ -272,7 +272,7 @@ const CarBox = () => {
                 <div>
                   <h6>Data e hora de entrega</h6>
                   <p>
-                    {}
+                    {dropTime}
                     <input type="time" className='input__time' />
                   </p>
                 </div>
@@ -284,7 +284,7 @@ const CarBox = () => {
                 <i><Location /></i>
                 <div>
                   <h6>Data e hora de entrega</h6>
-                  <p>{}</p>
+                  <p>{pickUp}</p>
                 </div>
               </span>
             </div>
@@ -294,7 +294,7 @@ const CarBox = () => {
                 <i><Location /></i>
                 <div>
                   <h6>Data e hora de entrega</h6>
-                  <p>{}</p>
+                  <p>{dropOff}</p>
                 </div>
               </span>
             </div>
@@ -302,6 +302,7 @@ const CarBox = () => {
           <div className="car__box-modal-car-info">
             <h5>
               <span>Carro: </span>
+              {carType}
             </h5>
             {imageUrl && <img src={imageUrl} alt='Car image' />}
           </div>
@@ -357,7 +358,7 @@ const CarBox = () => {
             </div>
             <span className='modal__form-check'>
               <input type="checkbox" />
-              <p>Por favor, envie-me as últimas notícias e atualizaçõe.</p>
+              <p>Envie-me notícias e atualizações.</p>
             </span>
             <div className="reserved__btn">
               <button onClick={confirmBooking} className='reservedBtn'>Alugar agora</button>
