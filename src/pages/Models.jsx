@@ -1,8 +1,14 @@
-import './style.css'
+import '../index.css'
 
 const Models = () => {
   return (
-    <div>Models</div>
+    <>
+      <section className="models">
+        <div className="container">
+          <h1>Modelos</h1>
+        </div>
+      </section>
+    </>
   )
 }
 

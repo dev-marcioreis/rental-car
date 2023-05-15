@@ -1,8 +1,14 @@
-import './style.css'
+import '../index.css'
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <>
+      <section className="contact">
+        <div className="container">
+          <h1>Contato</h1>
+        </div>
+      </section>
+    </>
   )
 }
 

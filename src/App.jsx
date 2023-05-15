@@ -4,8 +4,7 @@ import Home from './pages/Home'
 import Models from './pages/Models'
 import Team from './pages/Team'
 import Contact from './pages/Contact'
-
-import './App.css'
+import Footer from './components/footer/Footer'
 
 import { Route, Routes } from 'react-router-dom'
 
@@ -16,11 +15,12 @@ function App() {
       <Navbar />
       <Routes>
         <Route index path='rental-car/' element={<Home />} />
-        <Route path='about' element={<About />} />
-        <Route path='models' element={<Models />} />
-        <Route path='team' element={<Team />} />
-        <Route path='contact' element={<Contact />} />
+        <Route path='rental-car/about' element={<About />} />
+        <Route path='rental-car/models' element={<Models />} />
+        <Route path='rental-car/team' element={<Team />} />
+        <Route path='rental-car/contact' element={<Contact />} />
       </Routes>
+      <Footer />
     </>
   )
 }

@@ -1,8 +1,14 @@
-import './style.css'
+import '../index.css'
 
 const About = () => {
   return (
-    <div>About</div>
+    <>
+      <section className="about">
+        <div className="container">
+          <h1>Sobre</h1>
+        </div>
+      </section>
+    </>
   )
 }
 

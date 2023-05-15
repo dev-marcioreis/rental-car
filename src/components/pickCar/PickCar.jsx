@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Cars from '../cars/Cars'
-import './style.css'
+import './pickCar.css'
 import { Data_Cars } from '../Data_Cars.js'
 
 const PickCar = () => {

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import HeroCar from '../../assets/heroCar.png'
 import { AiOutlineCheckCircle as Check, AiOutlineArrowRight as Arrow, AiOutlineArrowUp as ArrowTop } from 'react-icons/ai'
-import './style.css'
+import './hero.css'
 import { useEffect, useState } from 'react'
 
 const Hero = () => {
@@ -39,10 +39,10 @@ const Hero = () => {
               <h2>Economize <span>muito.....</span> com o nosso aluguel de carros</h2>
               <p>Preços imbatíveis, milhas ilimitadas, opções de coleta flexíveis e muito mais.</p>
               <div className="hero__text-btns">
-                <Link className='text__btn' to="rental-car/">
+                <Link className='text__btn' to="#">
                   alugue <Check />
                 </Link>
-                <Link className='text__btn-learn-more' to="rental-car/">
+                <Link className='text__btn-learn-more' to="#">
                   saiba mais <Arrow />
                 </Link>
               </div>

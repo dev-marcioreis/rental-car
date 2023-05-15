@@ -11,7 +11,7 @@ import Tiggo from '../../assets/boxCars/tiggo.png'
 
 import { useEffect, useState } from 'react'
 
-import './style.css'
+import './carBox.css'
 
 const CarBox = () => {
 

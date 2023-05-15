@@ -1,4 +1,4 @@
-import './style.css'
+import './planTrip.css'
 
 const PlanTrip = () => {
   return (

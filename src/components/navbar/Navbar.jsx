@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import Logo from '../../assets/logo.png'
-import './style.css'
+import './navbar.css'
 import { useState } from 'react'
 import { AiOutlineMenu as Menu, AiOutlineClose as MenuClose } from 'react-icons/ai'
 
@@ -23,36 +23,36 @@ const Navbar = () => {
             </div>
             <ul className="navbar__links">
               <li>
-                <Link className='home__link' to="/">
+                <Link className='home__link' to="rental-car/">
                   início
                 </Link>
               </li>
               <li>
-                <Link className="about-link" to="/about">
+                <Link className="about-link" to="rental-car/about">
                   sobre
                 </Link>
               </li>
               <li>
-                <Link className="models-link" to="/models">
+                <Link className="models-link" to="rental-car/models">
                   modelos
                 </Link>
               </li>
               <li>
-                <Link className="team-link" to="/team">
+                <Link className="team-link" to="rental-car/team">
                   equipe
                 </Link>
               </li>
               <li>
-                <Link className="contact-link" to="/contact">
+                <Link className="contact-link" to="rental-car/contact">
                   contato
                 </Link>
               </li>
             </ul>
             <div className="navbar__btn">
-              <Link className="btn__sign-in" to="/">
+              <Link className="btn__sign-in" to="rental-car/">
                 Entrar
               </Link>
-              <Link className="btn__register" to="/">
+              <Link className="btn__register" to="rental-car/">
                 Cadastre-se
               </Link>
             </div>

@@ -1,9 +1,6 @@
-import { useState } from 'react'
-import './style.css'
+import './cars.css'
 
 const Cars = ({ data, carID }) => {
-
-  const [carLoad, setCarLoad] = useState(true)
 
   return (
     <>

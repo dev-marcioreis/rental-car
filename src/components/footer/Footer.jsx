@@ -1,8 +1,14 @@
-import './style.css'
+import './footer.css'
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <>
+      <footer className="footer">
+        <div className="container">
+          
+        </div>
+      </footer>
+    </>
   )
 }
 

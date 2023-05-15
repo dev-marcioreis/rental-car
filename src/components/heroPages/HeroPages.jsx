@@ -1,4 +1,4 @@
-import './style.css'
+import './heroPages.css'
 
 const HeroPages = () => {
   return (

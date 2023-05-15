@@ -105,6 +105,16 @@ img {
   width: 100%;
 }
 
+/*==========Pages==========*/
+.about, .contact, .models, .team {
+  margin-block-start: 20rem;
+  text-align: center;
+}
+.about h1, .contact h1, .models h1, .team h1 {
+  color: var(--color-red);
+  font-weight: 200;
+}
+
 /*==========Média Query==========*/
 @media (max-width: 1024px) {
   .container{
