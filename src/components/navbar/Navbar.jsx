@@ -17,7 +17,7 @@ const Navbar = () => {
       <div className='navbar'>
         <div className='container navbar__container'>
             <div className="navbar__image">
-              <Link to="/" onClick={() => window.scrollTo(0, 0)}>
+              <Link to="rental-car/" onClick={() => window.scrollTo(0, 0)}>
                   <img src={Logo} alt="Logo Image" />
               </Link>
             </div>

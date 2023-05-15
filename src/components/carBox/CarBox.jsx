@@ -204,8 +204,8 @@ const CarBox = () => {
                     <select value={pickUp} onChange={handlePick}>
                       <option>Selecione o local</option>
                       <option>Shopping Interlagos</option>
-                      <option>Aéropoto Congonhas</option>
-                      <option>Aéroporto Guarulhos</option>
+                      <option>Aeropoto Congonhas</option>
+                      <option>Aeroporto Guarulhos</option>
                       <option>Shopping Paulista</option>
                       <option>Shopping D</option>
                       <option>Shopping Tatuapé</option>
@@ -218,8 +218,8 @@ const CarBox = () => {
                     <select value={dropOff} onChange={handleDrop}>
                       <option>Selecione o local</option>
                       <option>Shopping Interlagos</option>
-                      <option>Aéropoto Congonhas</option>
-                      <option>Aéroporto Guarulhos</option>
+                      <option>Aeropoto Congonhas</option>
+                      <option>Aeroporto Guarulhos</option>
                       <option>Shopping Paulista</option>
                       <option>Shopping D</option>
                       <option>Shopping Tatuapé</option>
