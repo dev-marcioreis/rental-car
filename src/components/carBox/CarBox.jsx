@@ -162,7 +162,7 @@ const CarBox = () => {
 
   return (
     <>
-      <section className="carbox__section" id='booking-section'>
+      <section className="carbox__section" id='booking__section'>
 
         {/*==========Modal Overlay==========*/}
         <div onClick={openModal} className={`modal-overlay ${modal ? "active-modal" : ""}`}></div>

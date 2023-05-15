@@ -1,7 +1,6 @@
 .carbox__section {
     position: relative;
     margin-block-start: 7rem;
-    margin-block-end: 5rem;
 }
 .box__container {
     background: var(--color-gradient);

@@ -5,7 +5,7 @@ import Pulse from '../assets/boxCars/pulse.png'
 import TCross from '../assets/boxCars/tcross.png'
 import Tiggo from '../assets/boxCars/tiggo.png'
 
-export const CAR_DATA = [
+export const Data_Cars = [
   [
     {
       name: "Honda Civic",
