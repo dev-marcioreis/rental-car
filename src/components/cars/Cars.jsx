@@ -20,35 +20,34 @@ const Cars = ({ data, carID }) => {
               </div>
               <div className="description__table">
                 <div className="description__table-col">
-                  <span>Modelo</span>
+                  <span className='top__table'>Modelo</span>
                   <span>{car.model}</span>
                 </div>
                 <div className="description__table-col">
-                  <span>Fabricante</span>
+                  <span className='top__table'>Fabricante</span>
                   <span>{car.mark}</span>
                 </div>
                 <div className="description__table-col">
-                  <span>Ano</span>
+                  <span className='top__table'>Ano</span>
                   <span>{car.year}</span>
                 </div>
                 <div className="description__table-col">
-                  <span>Portas</span>
+                  <span className='top__table'>Portas</span>
                   <span>{car.doors}</span>
                 </div>
                 <div className="description__table-col">
-                  <span>Ar-condicionado</span>
+                  <span className='top__table'>Ar-condicionado</span>
                   <span>{car.air}</span>
                 </div>
                 <div className="description__table-col">
-                  <span>Câmbio</span>
+                  <span className='top__table'>Câmbio</span>
                   <span>{car.transmission}</span>
                 </div>
                 <div className="description__table-col">
-                  <span>Combustível</span>
+                  <span className='top__table'>Combustível</span>
                   <span>{car.fuel}</span>
                 </div>
               </div>
-              <a className="cta__btn" href="#booking__section">Reservar</a>
             </div>
           </div>
         ))

@@ -9,7 +9,7 @@ export const Data_Cars = [
   [
     {
       name: "Honda Civic",
-      price: "200",
+      price: "200,90",
       img: Civic,
       model: "EXL",
       mark: "Honda",
@@ -23,7 +23,7 @@ export const Data_Cars = [
   [
     {
       name: "Toyota Corolla",
-      price: "220",
+      price: "220,90",
       img: Corolla,
       model: "XEi",
       mark: "Toyota",
@@ -37,7 +37,7 @@ export const Data_Cars = [
   [
     {
       name: "Hyundai HB20 Sedan",
-      price: "150",
+      price: "150,90",
       img: HB20,
       model: "Comfort",
       mark: "Hyundai",
@@ -51,7 +51,7 @@ export const Data_Cars = [
   [
     {
       name: "Fiat Pulse",
-      price: "190",
+      price: "190,90",
       img: Pulse,
       model: "Drive",
       mark: "Fiat",
@@ -65,7 +65,7 @@ export const Data_Cars = [
   [
     {
       name: "Volkswagen T Cross",
-      price: "205",
+      price: "205,90",
       img: TCross,
       model: "Highline",
       mark: "Volkswagen",
@@ -79,7 +79,7 @@ export const Data_Cars = [
   [
     {
       name: "Chery Tiggo 7 Pro",
-      price: "120",
+      price: "120,90",
       img: Tiggo,
       model: "Pro",
       mark: "Chery",

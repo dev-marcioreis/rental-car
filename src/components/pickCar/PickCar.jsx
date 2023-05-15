@@ -30,12 +30,12 @@ const PickCar = () => {
             </div>
             <div className="pick__container-car-content">
               <div className="pick__box">
-                <button className={`${coloringBtn('btn1')}`} onClick={() => {setActive('SecondCar'); btnID('btn1')}}>Toyota Corolla</button>
-                <button className={`${coloringBtn('btn2')}`} onClick={() => {setActive('FirstCar'); btnID('btn2')}} id='btn2'>Honda Civic</button>
-                <button className={`${coloringBtn('btn3')}`} onClick={() => {setActive('ThirdCar'); btnID('btn3')}} id='btn3'>Hyundai HB20 Sedan</button>
-                <button className={`${coloringBtn('btn4')}`} onClick={() => {setActive('FourthCar'); btnID('btn4')}} id='btn4'>Fiat Pulse</button>
-                <button className={`${coloringBtn('btn5')}`} onClick={() => {setActive('FifthCar'); btnID('btn5')}} id='btn5'>Volkswagen T-Cross</button>
-                <button className={`${coloringBtn('btn6')}`} onClick={() => {setActive('SixthCar'); btnID('btn6')}} id='btn6'>Chery Tiggo 7 Pro</button>
+                <button className={`${coloringBtn('btn1')}`} onClick={() => {setActive('SecondCar'); btnID('btn1')}}>Corolla</button>
+                <button className={`${coloringBtn('btn2')}`} onClick={() => {setActive('FirstCar'); btnID('btn2')}} id='btn2'>Civic</button>
+                <button className={`${coloringBtn('btn3')}`} onClick={() => {setActive('ThirdCar'); btnID('btn3')}} id='btn3'>HB20</button>
+                <button className={`${coloringBtn('btn4')}`} onClick={() => {setActive('FourthCar'); btnID('btn4')}} id='btn4'>Pulse</button>
+                <button className={`${coloringBtn('btn5')}`} onClick={() => {setActive('FifthCar'); btnID('btn5')}} id='btn5'>T-Cross</button>
+                <button className={`${coloringBtn('btn6')}`} onClick={() => {setActive('SixthCar'); btnID('btn6')}} id='btn6'>Tiggo 7</button>
               </div>
               { active === "FirstCar" && <Cars data={Data_Cars} carID={0} /> }
               { active === "SecondCar" && <Cars data={Data_Cars} carID={1} /> }
