@@ -11,8 +11,7 @@ const Cars = ({ data, carID }) => {
         data[carID].map((car, id) => (
           <div className="box__cars" key={id}>
             <div className="pick__car">
-              {carLoad && <span className='loader'></span>}
-              <img src={car.img} alt="Car image" style={{ display: carLoad ? 'none' : 'block' }} onLoad={() => setCarLoad(false)} />
+              <img src={car.img} alt="Car image" onLoad={() => setCarLoad(false)} />
             </div>
             <div className="pick__description">
               <div className="description__price">
