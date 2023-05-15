@@ -48,5 +48,8 @@
     .footer__content {
         grid-template-columns: 1fr;
     }
+    .content__list-1 {
+        margin-block-start: 2rem;
+    }
 
 }
