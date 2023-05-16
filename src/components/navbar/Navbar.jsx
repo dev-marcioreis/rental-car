@@ -69,27 +69,27 @@ const Navbar = () => {
           </div>
           <ul className="navbar__mobile-links">
               <li>
-                <Link onClick={openNavbar} to="/">
+                <Link onClick={openNavbar} to="rental-car/">
                   início
                 </Link>
               </li>
               <li>
-                <Link onClick={openNavbar}  to="/about">
+                <Link onClick={openNavbar}  to="rental-car/about">
                   sobre
                 </Link>
               </li>
               <li>
-                <Link onClick={openNavbar}  to="/models">
+                <Link onClick={openNavbar}  to="rental-car/models">
                   modelos
                 </Link>
               </li>
               <li>
-                <Link onClick={openNavbar}  to="/team">
+                <Link onClick={openNavbar}  to="rental-car/team">
                   equipe
                 </Link>
               </li>
               <li>
-                <Link onClick={openNavbar}  to="/contact">
+                <Link onClick={openNavbar}  to="rental-car/contact">
                   contato
                 </Link>
               </li>

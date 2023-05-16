@@ -107,7 +107,7 @@ img {
 
 /*==========Pages==========*/
 .about, .contact, .models, .team {
-  margin-block-start: 20rem;
+  margin-block-start: 15rem;
   text-align: center;
 }
 .about h1, .contact h1, .models h1, .team h1 {
