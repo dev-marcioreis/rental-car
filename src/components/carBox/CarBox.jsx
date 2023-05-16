@@ -135,7 +135,7 @@ const CarBox = () => {
     case "Toyota Corolla":
       imageUrl = Corolla;
       break;
-    case "Hyundai HB20 Sedan":
+    case "Hyundai HB20 Sedã":
       imageUrl = HB20;
       break;
     case "Fiat Pulse":
@@ -190,7 +190,7 @@ const CarBox = () => {
                     <select value={carType} onChange={handleCar}>
                       <option>Selecione o tipo</option>
                       <option value="Volkswagen T Cross">Volkswagen T Cross</option>
-                      <option value="Hyundai HB20 Sedan">Hyundai HB20 Sedan</option>
+                      <option value="Hyundai HB20 Sedã">Hyundai HB20 Sedã</option>
                       <option value="Fiat Pulse">Fiat Pulse</option>
                       <option value="Toyota Corolla">Toyota Corolla</option>
                       <option value="Chery Tiggo 7 Pro">Chery Tiggo 7 Pro</option>

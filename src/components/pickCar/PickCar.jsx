@@ -25,7 +25,7 @@ const PickCar = () => {
               <h3>Modelos de veículos</h3>
               <h2>Nossa frota para alugar</h2>
               <p>
-                Escolha entre uma várias opções de veículos para alugar e embarque na sua próxima aventura.
+                Escolha entre uma das várias opções de veículos para alugar e embarque na sua próxima aventura.
               </p>
             </div>
             <div className="pick__container-car-content">

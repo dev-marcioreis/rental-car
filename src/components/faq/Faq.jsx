@@ -34,7 +34,7 @@ const Faq = () => {
                   <i><Down /></i>
                 </div>
                 <div className={`answer ${getAnswer('q1')}`} id='q1' onClick={() => openQuestion('q1')}>
-                  <p>Você pode fazer a sua reserva diretamente no site. Se preferir, é possível realizar a reserva por telefone em nossa Central de Reservas 24h, ligando para o 0800-800-800, e garantindo a disponibilidade do carro para o período desejado.</p>
+                  <p>Você pode fazer a sua reserva diretamente no site. Se preferir, é possível realizar a reserva por telefone em nossa central de reservas 24h, ligando para o 0800-800-800, e garantindo a disponibilidade do carro para o período desejado.</p>
                 </div>
               </div>
               <div className="questions__box">
@@ -57,7 +57,7 @@ const Faq = () => {
               </div>
               <div className="questions__box">
                 <div className={`question ${getQuestion('q4')}`} id='q4' onClick={() => openQuestion('q4')}>
-                  <p>Quanto custa a diária do aluguel de um veículo?</p>
+                  <p>Quanto custa a diária do aluguel?</p>
                   <i><Down /></i>
                 </div>
                 <div className={`answer ${getAnswer('q4')}`} id='q4' onClick={() => openQuestion('q4')}>

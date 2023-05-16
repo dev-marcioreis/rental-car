@@ -40,7 +40,7 @@ export const Data_Cars = [
   ],
   [
     {
-      name: "Hyundai HB20 Sedan",
+      name: "Hyundai HB20 Sedã",
       price: "150,90",
       img: HB20,
       model: "Comfort",
