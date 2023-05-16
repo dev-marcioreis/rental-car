@@ -40,7 +40,7 @@
     align-items: center;
     gap: 2rem;
 }
-.navbar__btn a {
+.navbar__btn a:not(:last-child) {
     font-weight: 400;
     cursor: pointer;
     transition: var(--transition);
@@ -51,6 +51,7 @@
 }
 .btn__register {
     background: var(--color-red);
+    color: var(--color-white);
     padding: .3rem .7rem;
     border-radius: .5rem;
     box-shadow: var(--shadow-1);
