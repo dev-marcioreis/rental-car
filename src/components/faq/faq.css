@@ -65,3 +65,22 @@
 .active__question.question i {
     transform: rotate(180deg);
 }
+
+
+/*==========Media Query Tablet==========*/
+@media (max-width: 1024px) {
+    .questions__box {
+        width: 100%;
+    }
+
+}
+
+
+/*==========Media Query Mobile==========*/
+@media (max-width: 768px) {
+    .faq {
+        padding: 0;
+        background: none;
+    }
+
+}
