@@ -36,7 +36,7 @@ const Hero = () => {
           <div className="hero__content">
             <div className="hero__content-info">
               <h4>Planeje sua viagem agora</h4>
-              <h2>Economize <span>muito.....</span> com o nosso aluguel de carros</h2>
+              <h2>Economize <small>muito.....</small> com o nosso aluguel de carros</h2>
               <p>Preços imbatíveis, milhas ilimitadas, opções de coleta flexíveis e muito mais.</p>
               <div className="hero__text-btns">
                 <Link className='text__btn' to="#">

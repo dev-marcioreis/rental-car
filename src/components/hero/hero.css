@@ -5,17 +5,17 @@
     justify-content: space-between;
 }
 .hero__content-info h4 {
-    color: var(--color-white);
-    font-weight: 200;
+    color: var(--color-bg);
+    font-weight: 300;
     letter-spacing: 1px;
 }
 .hero__content-info h2 {
-    font-size: 2.5rem;
-    font-weight: 400;
-    color: var(--color-white);
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--color-bg);
     line-height: 1;
 }
-.hero__content-info h2 span {
+.hero__content-info h2 small {
     color: var(--color-red);
     text-transform: uppercase;
     font-style: italic;
@@ -42,7 +42,7 @@
     box-shadow: var(--shadow-1);
 }
 .text__btn {
-    background: var(--color-primary);
+    background: var(--color-bg);
     transition: var(--transition);
 }
 .text__btn:hover {
@@ -55,7 +55,7 @@
 }
 .text__btn-learn-more:hover {
     box-shadow: var(--shadow);
-    background: var(--color-primary);
+    background: var(--color-bg);
 }
 .hero__bg-car {
     width: 60%;

@@ -179,7 +179,7 @@ const CarBox = () => {
                   <i onClick={hideMessage}><Close /></i>
                 </p>
                 <p className="booking__done">
-                  Verifique seu e-mail para confirmar o pedido.
+                  Verifique seu e-mail para confirmar.
                   <i onClick={hideMessage}><Close /></i>
                 </p>
                 <form className='box__form'>
@@ -323,46 +323,38 @@ const CarBox = () => {
                 <span>
                   <label>Nome <small>*</small></label>
                   <input value={name} onChange={handleName} type="text" placeholder='Digite seu nome' />
-                  <p className='modal__error-messege'>Este campo é obrigatório!</p>
                 </span>
                 <span>
                   <label>Sobrenome <small>*</small></label>
                   <input value={lastName} onChange={handleLastName} type="text" placeholder='Digite seu sobrenome' />
-                  <p className='modal__error-messege'>Este campo é obrigatório!</p>
                 </span>
                 <span>
                   <label>Telefone <small>*</small></label>
                   <input value={phone} onChange={handlePhone} type="tel" placeholder='Digite seu telefone' />
-                  <p className='modal__error-messege'>Este campo é obrigatório!</p>
                 </span>
                 <span>
                   <label>Idade <small>*</small></label>
                   <input value={age} onChange={handleAge} type="number" placeholder='Maior que 18 anos' />
-                  <p className='modal__error-messege'>Este campo é obrigatório!</p>
                 </span>
               </div>
               <div className="form__info-1col">
                 <span>
                   <label>E-mail <small>*</small></label>
                   <input value={email} onChange={handleEmail} type="email" placeholder='Digite seu e-mail' />
-                  <p className='modal__error-messege'>Este campo é obrigatório!</p>
                 </span>
                 <span>
                   <label>Endereço <small>*</small></label>
                   <input value={address} onChange={handleAddress} type="text" placeholder='Digite nome da rua' />
-                  <p className='modal__error-messege'>Este campo é obrigatório!</p>
                 </span>
               </div>
               <div className="form__info-2col">
                 <span>
                   <label>Cidade <small>*</small></label>
                   <input value={city} onChange={handleCity} type="text" placeholder='Digite nome da cidade' />
-                  <p className='modal__error-messege'>Este campo é obrigatório!</p>
                 </span>
                 <span>
                   <label>CEP <small>*</small></label>
                   <input value={zipcode} onChange={handleZip} type="text" placeholder='Digite o CEP' />
-                  <p className='modal__error-messege'>Este campo é obrigatório!</p>
                 </span>
               </div>
               <span className='modal__form-check'>

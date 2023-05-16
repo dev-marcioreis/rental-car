@@ -14,7 +14,7 @@
 }
 .description__price span {
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 600;
 }
 .description__table {
     display: flex;
@@ -25,7 +25,8 @@
     text-align: center;
 }
 .description__table-col .top__table {
-    background: var(--color-primary);
+    background: var(--color-red);
+    color: var(--color-white);
     padding: .2rem .5rem;
     margin-block-start: 1rem;
     margin-block-end: .5rem;

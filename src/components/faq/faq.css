@@ -28,7 +28,7 @@
     flex-direction: column;
     background: var(--color-white);
     color: var(--color-bg);
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow-1);
     width: 80%;
 }
 .question {

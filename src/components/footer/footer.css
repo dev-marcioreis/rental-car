@@ -40,7 +40,7 @@
 }
 .submit__email:hover {
     letter-spacing: 0;
-    background: var(--color-primary);
+    background: var(--color-dark);
 }
 
 /*==========Media Query==========*/

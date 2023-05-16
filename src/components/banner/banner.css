@@ -3,7 +3,7 @@
     justify-content: center;
     text-align: center;
     height: 14rem;
-    background: var(--color-dark);
+    background: var(--color-bg);
     padding: 1.5rem 0;
     box-shadow: var(--shadow);
 }
@@ -15,19 +15,20 @@
 }
 .banner__content-text h2 {
     font-size: 2.5rem;
-    font-weight: 400;
+    font-weight: 900;
+    color: var(--color-white);
+    letter-spacing: 1px;
 }
 .banner__content-text p {
     font-size: 1.4rem;
-    font-weight: 200;
+    color: var(--color-white);
+    font-weight: 400;
     text-transform: uppercase;
-    font-style: italic;
 }
 .banner__content-text p small {
     color: var(--color-red);
-    font-weight: 600;
+    font-weight: 500;
     text-transform: lowercase;
-    font-style: normal;
 }
 
 

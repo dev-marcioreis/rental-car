@@ -3,7 +3,7 @@
     margin-block-start: 7rem;
 }
 .box__container {
-    background: var(--color-gradient);
+    background: var(--color-bg);
     border-radius: .5rem;
     box-shadow: var(--shadow);
 }
@@ -25,9 +25,9 @@
 }
 .content h2 {
     text-align: center;
-    font-weight: 400;
+    font-weight: 600;
+    color: var(--color-white);
     margin-block-end: 2rem;
-    text-shadow: var(--shadow);
 }
 .box__form {
     display: grid;
@@ -42,14 +42,15 @@
 .box__form-car-type label {
     font-weight: 400;
     padding: .5rem 0;
+    color: var(--color-white);
 }
 label strong {
-    color: var(--color-red);
+    color: var(--color-white);
     margin-right: .5rem;
     font-size: 1rem;
 }
 label i {
-    color: var(--color-white);
+    color: var(--color-red);
     margin-right: .5rem;
 }
 .box__form-car-type select {
@@ -58,7 +59,7 @@ label i {
     color: var(--color-text);
     padding: .5rem;
     border-radius: .5rem;
-    box-shadow: var(--shadow-1);
+    box-shadow: var(--shadow);
 }
 .box__form-car-type select option {
     box-shadow: var(--shadow);
@@ -70,10 +71,11 @@ label i {
 }
 .box__form-car-time label {
     padding: .5rem 0;
+    color: var(--color-white);
 }
 .box__form-car-time input {
     border-radius: .5rem;
-    box-shadow: var(--shadow-1);
+    box-shadow: var(--shadow);
     color: var(--color-text);
     font-weight: 500;
 }
@@ -101,15 +103,20 @@ button {
     transition: var(--transition);
 }
 button:hover {
-    letter-spacing: 7px;
+    letter-spacing: 5px;
 }
 .error__message {
+    position: absolute;
+    top: -.5rem;
+    right: 0;
+    left: 0;
     background: var(--color-red);
     color: var(--color-white);
-    font-weight: 500;
+    font-weight: 300;
+    letter-spacing: 1px;
     padding: .5rem 1rem;
-    border-radius: .5rem;
-    box-shadow: var(--shadow);
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
     margin-block-end: 1rem;
     display: flex;
     align-items: center;
@@ -122,11 +129,16 @@ button:hover {
     cursor: pointer;
 }
 .booking__done {
+    position: absolute;
+    top: -.5rem;
+    right: 0;
+    left: 0;
     background: var(--color-green);
     color: var(--color-dark);
     font-weight: 500;
     padding: .5rem 1rem;
-    border-radius: .5rem;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
     box-shadow: var(--shadow);
     margin-block-end: 1rem;
     display: flex;
@@ -164,8 +176,6 @@ button:hover {
     height: 75%;
     background: var(--color-white);
     box-shadow: var(--shadow-1);
-    border: 2px solid var(--color-white);
-    border-radius: .5rem;
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
@@ -185,25 +195,28 @@ button:hover {
     border-bottom: 1px solid var(--color-text);
 }
 .car__box-modal-title h2 {
+    font-size: 1.5rem;
     color: var(--color-dark);
     font-weight: 200;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 .car__box-modal-title i {
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 50%;
     background: var(--color-red);
+    color: var(--color-white);
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
-    box-shadow: var(--shadow-1);
+    box-shadow: var(--shadow);
     cursor: pointer;
     transition: var(--transition);
 }
 .car__box-modal-title i:hover {
-    background: var(--color-dark);
+    background: var(--color-bg);
+    box-shadow: var(--shadow-1);
 }
 .car__box-modal-messege {
     display: flex;
@@ -292,19 +305,16 @@ button:hover {
     background: var(--color-white);
     color: var(--color-dark);
     margin-block-start: 1rem;
-    border-bottom-left-radius: .5rem;
-    border-bottom-right-radius: .5rem;
     padding: 2rem;
 }
 .car__box-modal-personal-info h4 {
-    background: var(--color-red);
     border-radius: .5rem;
     padding: .5rem;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 200;
-    text-transform: uppercase;
+    text-transform: capitalize;
     margin-block-end: 2rem;
-    box-shadow: var(--shadow-1);
+    box-shadow: var(--shadow);
 }
 .form__info-2col, .form__info-1col {
     display: grid;
@@ -334,9 +344,6 @@ span input {
     padding: .5rem;
     border-radius: .5rem;
 }
-.modal__error-messege {
-    color: var(--color-red);
-}
 .modal__form-check {
     display: flex;
     align-items: center;
@@ -362,7 +369,7 @@ span input {
 }
 .reserved__btn button:hover {
     letter-spacing: 0;
-    background: var(--color-primary);
+    background: var(--color-bg);
 }
 
 
@@ -393,7 +400,7 @@ span input {
 /*==========Media Query Mobile==========*/
 @media (max-width: 768px) {
     .box__container {
-        background: var(--color-transparent);
+        background: var(--color-white);
         box-shadow: none;
     }
     .box__content {
@@ -404,7 +411,16 @@ span input {
         background: none;
     }
     .content h2 {
-        display: none;
+        color: var(--color-bg);
+    }
+    .box__form-car-type label {
+        color: var(--color-bg);
+    }
+    label strong {
+        color: var(--color-bg);
+    }
+    .box__form-car-time label {
+        color: var(--color-bg);
     }
     .box__form {
         gap: .7rem;
@@ -414,13 +430,22 @@ span input {
         margin-block-start: 2rem;
         font-size: 1.1rem;
     }
+    .box__form-car-type select {
+        box-shadow: var(--shadow-1);
+    }
+    .box__form-car-time input {
+        box-shadow: var(--shadow-1);
+    }
+    .booking__done, .error__message {
+        top: -2.5rem;
+    }
     .car__box-modal {
         top: 50%;
         width: 100%;
         height: 100%;
     }
     .car__box-modal-title {
-        padding: 0;;
+        padding: 0;
     }
     .car__box-modal-title h2 {
         font-size: 1.1rem;
