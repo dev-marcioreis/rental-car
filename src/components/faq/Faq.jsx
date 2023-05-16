@@ -2,7 +2,17 @@ import './faq.css'
 
 const Faq = () => {
   return (
-    <div>Faq</div>
+    <>
+      <section className="faq">
+        <div className="container">
+          <div className="faq__content">
+            <div className="faq__content-title">
+              <h5>FAQ</h5>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
   )
 }
 

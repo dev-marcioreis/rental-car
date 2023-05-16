@@ -1,0 +1,54 @@
+.banner__container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 14rem;
+    background: var(--color-dark);
+    padding: 1.5rem 0;
+    box-shadow: var(--shadow);
+}
+.banner__content-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.banner__content-text h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+.banner__content-text p {
+    font-size: 1.4rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    font-style: italic;
+}
+.banner__content-text p small {
+    color: var(--color-red);
+    font-weight: 600;
+    text-transform: lowercase;
+    font-style: normal;
+}
+
+
+/*==========Média Query Tablet==========*/
+@media (max-width: 1024px) {
+    .banner__content-text h2 {
+        font-size: 2rem;
+    }
+    .banner__content-text p {
+        font-size: 1.1rem;
+    }
+
+}
+
+/*==========Média Query Mobile==========*/
+@media (max-width: 768px) {
+    .banner__content-text {
+        width: var(--container-lg);
+    }
+    .banner__content-text h2 {
+        font-size: 1.5rem;
+    }
+
+}

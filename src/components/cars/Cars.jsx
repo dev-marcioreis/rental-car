@@ -32,7 +32,7 @@ const Cars = ({ data, carID }) => {
                   <span>{car.doors}</span>
                 </div>
                 <div className="description__table-col">
-                  <span className='top__table'>Ar-condicionado</span>
+                  <span className='top__table'>Ar</span>
                   <span>{car.air}</span>
                 </div>
                 <div className="description__table-col">
@@ -42,6 +42,14 @@ const Cars = ({ data, carID }) => {
                 <div className="description__table-col">
                   <span className='top__table'>Combustível</span>
                   <span>{car.fuel}</span>
+                </div>
+                <div className="description__table-col">
+                  <span className='top__table'>Cor</span>
+                  <span>{car.color}</span>
+                </div>
+                <div className="description__table-col">
+                  <span className='top__table'>Elétrico</span>
+                  <span>{car.electric}</span>
                 </div>
               </div>
             </div>

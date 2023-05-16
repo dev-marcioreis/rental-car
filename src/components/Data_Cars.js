@@ -18,6 +18,8 @@ export const Data_Cars = [
       air: "Sim",
       transmission: "Atomático",
       fuel: "Gasolina",
+      color: "Azul",
+      electric: "Não"
     },
   ],
   [
@@ -32,6 +34,8 @@ export const Data_Cars = [
       air: "Sim",
       transmission: "Manual",
       fuel: "Flex",
+      color: "Branco",
+      electric: "Não"
     },
   ],
   [
@@ -46,6 +50,8 @@ export const Data_Cars = [
       air: "Sim",
       transmission: "Manual",
       fuel: "Etanol",
+      color: "Cinza",
+      electric: "Não"
     },
   ],
   [
@@ -60,6 +66,8 @@ export const Data_Cars = [
       air: "Sim",
       transmission: "Automático",
       fuel: "Gasolina",
+      color: "Preto",
+      electric: "Não"
     },
   ],
   [
@@ -74,6 +82,8 @@ export const Data_Cars = [
       air: "Sim",
       transmission: "Automático",
       fuel: "Flex",
+      color: "Preto",
+      electric: "Não"
     },
   ],
   [
@@ -88,6 +98,8 @@ export const Data_Cars = [
       air: "Sim",
       transmission: "Manual",
       fuel: "Flex",
+      color: "Preto",
+      electric: "Não"
     },
   ],
   
