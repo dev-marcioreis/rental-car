@@ -175,7 +175,7 @@ const CarBox = () => {
               <div className="content">
                 <h2>Reserve um carro</h2>
                 <p className='error__message'>
-                  Todos os campos são obrigatórios!
+                  Preencher os campos!
                   <i onClick={hideMessage}><Close /></i>
                 </p>
                 <p className="booking__done">
