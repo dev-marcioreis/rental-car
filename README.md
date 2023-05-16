@@ -2,12 +2,12 @@
 
 ---
 
-Este projeto será uma página para simular aluguel de veículos.
+Este projeto é uma página para simular aluguel de veículos.
 
 ## 🚀 Finalizado!
 
 ## 📋 Tecnologias
-React + Vite + React hooks + React icons + React router ++++++
+React + Vite + React hooks + React icons + React router
 
 ## ✒️ Autor
 Márcio Reis
