@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     background-position: -30% 80%;
     filter: contrast(1.5);
-    padding: 7rem 0;
+    padding: 10rem 0 22rem;
 }
 .faq__content {
     display: flex;
@@ -12,16 +12,20 @@
 }
 .faq__content-title {
     text-align: center;
+    margin-block-start: -12rem;
 }
 .faq__content-title h2 {
     color: var(--color-red);
     font-weight: 200;
 }
 .all__questions-content {
+    position: fixed;
+    top: 7rem;
+    left: 0;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 4rem;
 }
 .questions__box {
     display: flex;
@@ -69,8 +73,8 @@
 
 /*==========Media Query Tablet==========*/
 @media (max-width: 1024px) {
-    .questions__box {
-        width: 100%;
+    .faq {
+        background-position: 25rem 3rem;
     }
 
 }
@@ -79,8 +83,14 @@
 /*==========Media Query Mobile==========*/
 @media (max-width: 768px) {
     .faq {
-        padding: 0;
-        background: none;
+        background-position: 5rem 6.5rem;
+        padding: 7.5rem 0 27rem;
+    }
+    .all__questions-content {
+        top: 4rem;
+    }
+    .questions__box {
+        width: 90%;
     }
 
 }
