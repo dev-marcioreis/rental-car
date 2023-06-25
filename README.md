@@ -2,7 +2,7 @@
 
 ---
 
-Este projeto é uma página para simular aluguel de veículos.
+Este projeto é uma página para simular aluguel de veículos com funcionalidades reais desenvolvido em React.
 
 ## 🚀 Finalizado!
 
